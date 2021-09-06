@@ -195,6 +195,24 @@ console.log( v );
 
 <!-- /.references -->
 
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+* * *
+
+## See Also
+
+-   [`@stdlib/stats/base/dmeankbn`][@stdlib/stats/base/dmeankbn]: calculate the arithmetic mean of a double-precision floating-point strided array using an improved Kahan–Babuška algorithm.
+-   [`@stdlib/stats/base/meankbn`][@stdlib/stats/base/meankbn]: calculate the arithmetic mean of a strided array using an improved Kahan–Babuška algorithm.
+-   [`@stdlib/stats/base/smean`][@stdlib/stats/base/smean]: calculate the arithmetic mean of a single-precision floating-point strided array.
+
+</section>
+
+<!-- /.related -->
+
+<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
 
 <section class="main-repo" >
 
@@ -257,6 +275,16 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [mdn-typed-array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray
 
 [@neumaier:1974a]: https://doi.org/10.1002/zamm.19740540106
+
+<!-- <related-links> -->
+
+[@stdlib/stats/base/dmeankbn]: https://github.com/stdlib-js/stats-base-dmeankbn
+
+[@stdlib/stats/base/meankbn]: https://github.com/stdlib-js/stats-base-meankbn
+
+[@stdlib/stats/base/smean]: https://github.com/stdlib-js/stats-base-smean
+
+<!-- </related-links> -->
 
 </section>
 
