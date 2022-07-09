@@ -41,32 +41,30 @@ The [arithmetic mean][arithmetic-mean] is defined as
 
 <!-- /.intro -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/stats-base-smeankbn
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-smeankbn = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-smeankbn@umd/bundle.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-smeankbn@umd/bundle.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.smeankbn;
-})();
-</script>
+var smeankbn = require( '@stdlib/stats-base-smeankbn' );
 ```
 
 #### smeankbn( N, x, stride )
@@ -170,16 +168,11 @@ var v = smeankbn.ndarray( N, x, 2, 1 );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@umd/bundle.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-round@umd/bundle.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-float32@umd/bundle.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-smeankbn@umd/bundle.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var randu = require( '@stdlib/random-base-randu' );
+var round = require( '@stdlib/math-base-special-round' );
+var Float32Array = require( '@stdlib/array-float32' );
+var smeankbn = require( '@stdlib/stats-base-smeankbn' );
 
 var x;
 var i;
@@ -192,11 +185,6 @@ console.log( x );
 
 var v = smeankbn( x.length, x, 1 );
 console.log( v );
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -270,8 +258,8 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/stats-base-smeankbn.svg
 [npm-url]: https://npmjs.org/package/@stdlib/stats-base-smeankbn
 
-[test-image]: https://github.com/stdlib-js/stats-base-smeankbn/actions/workflows/test.yml/badge.svg?branch=main
-[test-url]: https://github.com/stdlib-js/stats-base-smeankbn/actions/workflows/test.yml?query=branch:main
+[test-image]: https://github.com/stdlib-js/stats-base-smeankbn/actions/workflows/test.yml/badge.svg?branch=v0.0.7
+[test-url]: https://github.com/stdlib-js/stats-base-smeankbn/actions/workflows/test.yml?query=branch:v0.0.7
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/stats-base-smeankbn/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/stats-base-smeankbn?branch=main
@@ -296,12 +284,13 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 [deno-url]: https://github.com/stdlib-js/stats-base-smeankbn/tree/deno
 [umd-url]: https://github.com/stdlib-js/stats-base-smeankbn/tree/umd
 [esm-url]: https://github.com/stdlib-js/stats-base-smeankbn/tree/esm
+[branches-url]: https://github.com/stdlib-js/stats-base-smeankbn/blob/main/branches.md
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/stats-base-smeankbn/main/LICENSE
 
 [arithmetic-mean]: https://en.wikipedia.org/wiki/Arithmetic_mean
 
-[@stdlib/array/float32]: https://github.com/stdlib-js/array-float32/tree/umd
+[@stdlib/array/float32]: https://github.com/stdlib-js/array-float32
 
 [mdn-typed-array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray
 
@@ -309,11 +298,11 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/stats/base/dmeankbn]: https://github.com/stdlib-js/stats-base-dmeankbn/tree/umd
+[@stdlib/stats/base/dmeankbn]: https://github.com/stdlib-js/stats-base-dmeankbn
 
-[@stdlib/stats/base/meankbn]: https://github.com/stdlib-js/stats-base-meankbn/tree/umd
+[@stdlib/stats/base/meankbn]: https://github.com/stdlib-js/stats-base-meankbn
 
-[@stdlib/stats/base/smean]: https://github.com/stdlib-js/stats-base-smean/tree/umd
+[@stdlib/stats/base/smean]: https://github.com/stdlib-js/stats-base-smean
 
 <!-- </related-links> -->
 
